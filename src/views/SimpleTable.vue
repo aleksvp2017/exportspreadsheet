@@ -7,7 +7,6 @@
         </v-card-actions>
         <v-data-table
             show-select
-            ref="simpleTable"
             v-model="rowsSelected"
             class="elevation-1"
             :headers="tableColumns"
@@ -32,7 +31,6 @@ export default {
     data() {
         return {
             searchKey: '',
-            simpleTable: {},
             rowsSelected: [],
             tableColumns:[
                 {
